@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_columnSpan="2"
+    android:layout_rowSpan="3"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="fragments.NaoInfoFragment"
+    tools:showIn="@layout/activity_nao_info">
+
+    <TextView
+        android:id="@+id/titleNaoInfo"
+        style="@style/TitleFontDesign"
+        android:text="@string/titleNaoInfo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/helloIm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/helloIm"
+        android:text="@string/helloIm"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_marginBottom="15dp"
+            android:layout_row="0"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageBattery"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/batteryInfo" />
+
+            <TextView
+                android:id="@+id/textViewBattery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Battery"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_column="1"
+            android:layout_marginBottom="15dp"
+            android:layout_row="0"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Apperance"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/apperance" />
+
+            <TextView
+                android:id="@+id/textViewApperance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Apperance"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_row="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageSignalStrength"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/signalStrength" />
+
+            <TextView
+                android:id="@+id/textViewSignalStrength"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Signal Strength"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_column="1"
+            android:layout_row="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/temperatureImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/temperature" />
+
+            <TextView
+                android:id="@+id/textViewTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Temperature"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>

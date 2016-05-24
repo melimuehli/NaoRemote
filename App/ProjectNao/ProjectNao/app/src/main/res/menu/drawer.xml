@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/connectWithNao"
+            android:checked="false"
+            android:title="@string/titleConnectWithNao"
+            android:icon="@drawable/phone_to_nao"/>
+        <item
+            android:id="@+id/naoInfo"
+            android:checked="false"
+            android:title="@string/titleNaoInfo"
+            android:icon="@drawable/information_outline"/>
+        <item
+            android:id="@+id/actionsOfNao"
+            android:checked="false"
+            android:title="Actions"
+            android:icon="@drawable/waving_nao_icon"
+            />
+        <item
+            android:id="@+id/controllNao"
+            android:checked="false"
+            android:title="Controll"
+            android:icon="@drawable/moving_nao_icon"
+            />
+        <item
+            android:id="@+id/downloadPc"
+            android:checked="false"
+            android:title="Download from PC"
+            android:icon="@drawable/phone_to_pc"
+            />
+        <item
+            android:id="@+id/downloadServer"
+            android:checked="false"
+            android:title="Download from Server"
+            android:icon="@drawable/phone_to_server"
+            />
+    </group>
+</menu>
