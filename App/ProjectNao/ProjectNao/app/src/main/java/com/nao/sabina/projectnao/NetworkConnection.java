@@ -7,6 +7,8 @@ import android.net.wifi.WifiManager;
 
 /**
  * Created by Melanie on 11.05.16.
+ * Description: This class checks if the Wifi is turned on on the device.
+ * If it´s connected it will be checked, if the device is connected to an Wireless-Network.
  */
 public class NetworkConnection {
 
@@ -20,7 +22,6 @@ public class NetworkConnection {
 
         if(!(mWifi.isConnected())) {
             connectedWithWifi = false;
-            //message = "Please connect with your Wifi";
         }else{
             connectedWithWifi = true;
         }
